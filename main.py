@@ -48,7 +48,7 @@ async def __create_table(ctx):
     await __update_table(ctx.guild)
         
 async def __update_table(guild):
-    channel = discord.utils.get(guild.channels, name="家-информация-о-триаде-家")
+    channel = discord.utils.get(guild.channels, name="社会信用-социальный-кредит-社会信用")
     if channel:
         triad_role = discord.utils.get(guild.roles, name="Триадовец [三合会士兵]")  
         if triad_role:
@@ -79,7 +79,7 @@ async def __update_table(guild):
         else:
             await channel.send(f"Роль Триадовец [三合会士兵] не найдена.")
     else:
-        await guild.owner.send(f"Канал квартиры не найден.")
+        await guild.owner.send(f"Канал 社会信用-социальный-кредит-社会信用 не найден.")
 
 
 @commands.has_role("Голова дракона x 龙的头")
