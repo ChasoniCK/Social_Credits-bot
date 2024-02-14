@@ -23,6 +23,7 @@ async def on_ready():
             else:
                 pass
     connection.commit()
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Zа Триадовцами"))
 
 @bot.event
 async def on_member_join(member):
