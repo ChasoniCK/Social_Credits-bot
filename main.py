@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from discord import Intents
+import config
 import sqlite3
 
 bot = commands.Bot(command_prefix='!', intents=Intents.all())
@@ -125,4 +126,4 @@ async def __take(ctx, member: discord.Member = None, amount = None):
             await __create_table(ctx)
 
 
-bot.run('MTIwNTkyNjY4ODIxMTQ2ODM5MA.G7q8jl.7WLhFWK2S27knLA8a57ityrVFmYAUc11WmmRXI')
+bot.run(config.config['TOKEN'])
